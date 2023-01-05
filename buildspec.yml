@@ -10,7 +10,7 @@ phases:
       - cd package
       - zip -r ../deployment_package.zip .
       - cd ..
-      - zip -g deployment_package.zip my-first-function/function.js
+      - zip -g deployment_package.zip function.js
   post_build:
     commands:
       - echo "Updating lambda Function..."
